@@ -52,6 +52,18 @@ class BookInStock
       raise ArgumentError
     end
   end
+  def isbn
+    @isbn
+  end
+  def isbn=(isbn)
+    @isbn = isbn
+  end
+  def price=(price)
+    @price = price
+  end
+  def price
+    @price
+  end 
   def price_as_string #price processing
     "$" + "%.2f" % @price
   end
